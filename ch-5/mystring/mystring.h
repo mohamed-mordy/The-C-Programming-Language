@@ -7,5 +7,5 @@ int mystrncmp(const char *s, const char *t, int n);
 int mystrlen(char *s);
 int mystrend(const char *s, const char *t);
 int strindex(const char *s, const char *t);
-int strrindex(onst char *s, const char *t); 
+int strrindex(const char *s, const char *t); 
 void reverse(char *s);
