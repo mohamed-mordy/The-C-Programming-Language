@@ -1,5 +1,3 @@
-
-
 void mystrcat(char *s, const char *t)
 {
 	while (*s)
@@ -32,8 +30,7 @@ void mystrncpy(char *dst, const char *src, int n)
 
 int mystrcmp(const char *s, const char *t)
 {
-	while (*s == *t)
-	{
+	while (*s == *t) {
 		if (!*s)
 			return 0;
 		s++, t++;
@@ -43,8 +40,7 @@ int mystrcmp(const char *s, const char *t)
 
 int mystrncmp(const char *s, const char *t, int n)
 {
-	while ((*s == *t) && n)
-	{
+	while ((*s == *t) && n) {
 		if (!*s)
 			return 0;
 		s++, t++, n--;
@@ -67,8 +63,7 @@ int mystrend(const char *s, const char *t)
 	const char *ss;
 	const char *tt;
 	//
-	while (*s)
-	{
+	while (*s) {
 		tt = t;
 		ss = s;
 		while (*tt++ == *ss++)
@@ -85,8 +80,7 @@ int strindex(const char *s, const char *t)
 	const char *tt;
 	const char *ss;
 
-	while (*s)
-	{
+	while (*s) {
 		tt = t;
 		ss = s;
 		while (*tt && *ss == *tt)
@@ -105,8 +99,7 @@ int strrindex(const char *s, const char *t)
 	const char *ss;
 	int index = 0;
 
-	while (*s)
-	{
+	while (*s) {
 		tt = t;
 		ss = s;
 		while (*tt && *ss == *tt)
