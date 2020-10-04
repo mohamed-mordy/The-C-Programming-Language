@@ -123,3 +123,14 @@ void reverse(char *s)
 	while (t > s)
 		c = *s, *s = *t, *t = c, t--, s++;
 }
+
+void mysubstring(char *dst, const char *src, int from, int to)
+{
+	int i, j;
+
+	i = 0;
+	j = from;
+	while (j <= to)
+		dst[i++] = src[j++];
+	dst[i] = '\0';
+}

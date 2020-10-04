@@ -15,6 +15,6 @@ mygetline.o: mygetline.c mygetline.h
 qsort.o: qsort.c qsort.h
 	gcc -c qsort.c
 
-.PHOYN: clean
+.PHONY: clean
 clean:
 	rm *.exe; rm *.o;
